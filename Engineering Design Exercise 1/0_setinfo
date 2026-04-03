@@ -1,0 +1,33 @@
+%%%%%                                          %%%%%
+%%%%% COMPLETE THIS SECTION FOR THE FRONT PAGE %%%%%
+%
+% This template is based on the reporting guidelines of LUT. Some changes/additions have been made just to it look nicer overall. However, these changes (highlighted with a comment before the specific settings) can be either modified or removed altogether. Do as you wish, I have done my part giving you this :)
+%
+% Super kindly provided by Matteo Bulleri and Simone Gherardi
+% 
+%
+% P.S. If you are unsure about which commands you can use, just search online "how to [do what you want to do] [name of the package, if you know it] latex"
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\School}{Lappeenranta–Lahti University of Technology LUT}
+\newcommand{\Major}{Write your Major here}
+\newcommand{\CourseNumber}{Write course Number here}
+\newcommand{\CourseName}{Write course Name here}
+\newcommand{\Responsible}{Write here the name of the teacher responsible for the course}
+\newcommand{\Examiners}{Changyang Li}
+\newcommand{\YourName}{Faiz Shaikh}
+\newcommand{\YourStudNumber}{Write here your student number}
+\newcommand{\YourTitleReport}{Exercise 1}
+\newcommand{\YourSubtitle}{BK10A6300 Engineering Design}
+
+% Write here the date (comment the lines below if the date is not needed)
+\newdate{date}{05}{11}{2026}
+\newcommand{\YourDate}{
+% Comment the option you are not going to use
+% Specify specific date uncommenting these 3 lines and writing the date you want in the second one.
+\displaydate{date}
+% or otherwise use today's date
+%\today
+}
+\newcommand{\YourYear}{\getdateyear{date}}

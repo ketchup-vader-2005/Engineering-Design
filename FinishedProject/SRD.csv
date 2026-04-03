@@ -1,0 +1,64 @@
+
+RMS-1, 1, The SMARTON overhead crane shall provide remote-controlled lifting and lowering of loads up to 100 t, including the weight of any below‑the‑hook equipment., FunctionalRequirement
+RMS-1, 2, The SMARTON crane shall permit smooth and precise motion along its approximately 23 000 mm bridge length and associated trolley travel to enable accurate component positioning., FunctionalRequirement
+RMS-1, 3, The crane shall offer variable-speed hoisting and travel, with motion profiles configurable to support both fine assembly lifts and faster logistics handling., FunctionalRequirement
+RMS-1, 4, The crane shall continuously monitor hoist load, travel limit positions and drive status and shall make these signals available to the supervisory control system., FunctionalRequirement
+RMS-1, 5, The crane shall be operated only when the combined mass of the lifted component, lifting fixtures and rigging remains at or below the rated 100 t capacity., Constraint
+RMS-1, 6, The crane overall envelope (approximately 3 500 mm height, 3 000 mm width and 23 000 mm span) shall be compatible with the building clearances, runway geometry and maintenance access requirements., Constraint
+RMS-2, 7, The CXT double‑girder crane shall provide lifting and lowering of loads up to 80 t using a wire‑rope hoist mounted on the bridge., FunctionalRequirement
+RMS-2, 8, The crane shall allow independent bridge and trolley motion to position loads anywhere along its approximately 30 000 mm runway span and across the full working width of about 2 500 mm., FunctionalRequirement
+RMS-2, 9, The CXT crane shall support at least two hoisting speed ranges (fine and coarse) and controlled acceleration and deceleration on all axes., FunctionalRequirement
+RMS-2, 10, The CXT hoist, bridge and trolley structures shall be sized such that deflections under maximum rated load remain within the manufacturer’s specified limits., Constraint
+RMS-2, 11, The crane and its runway system shall be installed and maintained in accordance with applicable overhead crane design and safety standards, including overload protection and travel limit devices., Constraint
+RMS-3, 12, The SBL1100 hydraulic gantry shall provide synchronized lifting and lowering via four telescopic legs, each capable of operating through multiple stages between approximately 4 371 mm and 12 003 mm in height., FunctionalRequirement
+RMS-3, 13, The gantry shall accommodate header beams and skidding equipment within a footprint of roughly 2 250 mm by 3 454 mm per leg, enabling heavy lifts in constrained floor areas., FunctionalRequirement
+RMS-3, 14, The gantry control system shall display hydraulic pressures, stroke positions and load distribution for each leg in real time to support safe operation., FunctionalRequirement
+RMS-3, 15, The SBL1100 shall only be used within its staged load‑versus‑height charts and may not exceed the rated capacities for any leg extension combination., Constraint
+RMS-3, 16, The supporting foundations, skid tracks and header beams shall be demonstrated to withstand the maximum leg reactions and system mass of approximately 47 800 kg before gantry operation., Constraint
+RMS-4, 17, The 42A hydraulic gantry shall provide four‑point lifting using telescopic cylinders with a retracted height of about 2 959 mm and a maximum extended height of about 6 528 mm., FunctionalRequirement
+RMS-4, 18, The 42A system shall allow controlled incremental lifting and lowering, with mechanical or hydraulic load‑holding engaged after each step., FunctionalRequirement
+RMS-4, 19, The gantry bases shall remain stable within their approximate 1 676 mm length and 914 mm width footprint throughout the full lifting range., FunctionalRequirement
+RMS-4, 20, The 42A gantry shall not be used beyond its rated base capacity of approximately 200 t or its reduced top‑stage capacity of approximately 170 t as specified in the manufacturer’s charts., Constraint
+RMS-4, 21, The total system mass of roughly 4 899 kg plus supported load shall be used to verify ground bearing pressures before deployment., Constraint
+RMS-5, 22, The HSL‑Series strand jack system shall provide vertical lifting and lowering of heavy structures by hydraulic stroking of multiple high‑strength steel strands., FunctionalRequirement
+RMS-5, 23, Each strand jack shall be capable of delivering lifting forces in the 1 000 t class when operated at the specified stroke and pressure using certified strands., FunctionalRequirement
+RMS-5, 24, The strand jack units and their frames shall be installable within an envelope of approximately 2 500 mm height, 1 500 mm length and 1 200 mm width., FunctionalRequirement
+RMS-5, 25, The strand jack control system shall permit synchronous control of multiple jacks with monitoring of stroke, pressure and strand slip., FunctionalRequirement
+RMS-5, 26, Only strands, anchorages and stressing procedures recommended by the manufacturer may be used, and the maximum rated working pressure shall not be exceeded., Constraint
+RMS-6, 27, The DL‑S strand jack units shall be capable of individually lifting loads in the order of 25 t by gripping and stroking a small bundle of strands., FunctionalRequirement
+RMS-6, 28, Each jack shall be compact enough to be installed in areas with approximate space limits of 700 mm height, 300 mm length and 300 mm width., FunctionalRequirement
+RMS-6, 29, The DL‑S jacks shall be connectable to a common hydraulic power and control system for coordinated operation of multiple units., FunctionalRequirement
+RMS-6, 30, The mass of each DL‑S unit (approximately 150 kg) shall be compatible with the available handling and support structures at the installation location., Constraint
+RMS-6, 31, The DL‑S strand jacks shall only be used with strand diameters, working pressures and lifting cycles specified in the DLT strand jack documentation., Constraint
+RMS-7, 32, The CC122 orbital cutter shall cold‑cut tubes and pipes with outer diameters from approximately 5 mm up to 119 mm and wall thickness up to about 15 mm., FunctionalRequirement
+RMS-7, 33, The machine shall maintain cut perpendicularity better than 0.25 mm by using a concentric stainless‑steel clamping system., FunctionalRequirement
+RMS-7, 34, The CC122 shall be operable within its compact envelope of about 443 mm height, 541 mm length and 304 mm width, with a mass of approximately 44 kg., FunctionalRequirement
+RMS-7, 35, The cutter shall offer adjustable cutting speeds suitable for stainless steel and other tube materials used in the installation., FunctionalRequirement
+RMS-7, 36, Only AXXAIR‑approved blades, clamping jaws and motor options shall be used, and the tool shall not be applied outside its rated diameter and thickness range., Constraint
+RMS-8, 37, The GF 6 machine shall perform orbital cutting and beveling of pipes with outside diameters in the range of approximately 21.3 mm to 168.3 mm and wall thickness between about 1.5 mm and 15 mm., FunctionalRequirement
+RMS-8, 38, The machine shall use a planetary cutting method that produces square, burr‑minimized pipe ends suitable for immediate weld preparation., FunctionalRequirement
+RMS-8, 39, The GF 6 unit shall operate reliably within its approximate 920 mm height, 574 mm length and 353 mm width envelope and at a mass of about 93 kg., FunctionalRequirement
+RMS-8, 40, The GF 6 shall provide controllable rotation and feed speeds to accommodate different pipe alloys and bevel geometries., FunctionalRequirement
+RMS-8, 41, The machine shall be mounted only on supports or benches capable of carrying its own mass and the reaction forces generated during cutting and beveling., Constraint
+RMS-9, 42, The LCSF 610 split frame shall clamp around in‑line pipes and perform cold cutting and beveling using a rotating tool head., FunctionalRequirement
+RMS-9, 43, The tool body shall fit within an approximate 350 mm × 350 mm × 150 mm envelope and have a mass of about 22 kg to enable installation in restricted spaces., FunctionalRequirement
+RMS-9, 44, The split frame shall accept interchangeable tooling to support straight cuts, standard bevels and facing operations on the specified pipe size range., FunctionalRequirement
+RMS-9, 45, The LCSF 610 shall only be used on pipe diameters, wall thicknesses and materials within the ranges specified in the manufacturer’s data sheet., Constraint
+RMS-9, 46, The frame halves shall be fully closed, aligned and locked around the pipe before rotation is initiated., Constraint
+RMS-10, 47, The 614RBL‑G2 clamshell lathe shall sever and bevel in‑line pipe over its rated size range (approximately 7″ to 14″ nominal) using a rotating split‑frame design., FunctionalRequirement
+RMS-10, 48, The lathe shall be capable of operating in spaces where its main frame envelope of roughly 774 mm length, 582 mm diameter and 84 mm radial width can be accommodated., FunctionalRequirement
+RMS-10, 49, The clamshell shall support multiple tool slide configurations to generate compound bevels, counterbores or other required weld preparations., FunctionalRequirement
+RMS-10, 50, The 614RBL‑G2 shall only be driven by pneumatic, hydraulic or electric motors that meet Tri Tool’s specified torque and speed limits., Constraint
+RMS-10, 51, The clamshell shall be clamped and jackscrews torqued according to the manufacturer’s procedure to maintain alignment and prevent slippage during cutting., Constraint
+RMS-11, 52, The Dictator II MILLHOG shall bevel heavy‑wall pipe ends by clamping on the internal diameter and rotating a cutter head., FunctionalRequirement
+RMS-11, 53, The tool shall accommodate pipes from approximately 114.3 mm I.D. to 609.6 mm O.D. when equipped with suitable mandrel and clamp sets., FunctionalRequirement
+RMS-11, 54, The beveler shall operate within an approximate 813 mm height, 762 mm length and 424 mm width envelope and at a mass of about 121 kg., FunctionalRequirement
+RMS-11, 55, The Dictator II shall accept a range of cutter blades that enable different bevel angles and land widths required by the welding procedures., FunctionalRequirement
+RMS-11, 56, The beveler shall not be operated above the maximum rated rotational speed or outside its specified pipe size and wall thickness range., Constraint
+RMS-12, 57, The CERN Compact Universal Orbital Cutter shall provide orbital cutting of pipes over a target diameter range of approximately 100 mm to 1 200 mm., FunctionalRequirement
+RMS-12, 58, The prototype cutter shall operate within a compact envelope of roughly 300 mm height, 400 mm length and 150 mm width with a mass near 5 kg, allowing deployment in tight spaces., FunctionalRequirement
+RMS-12, 59, The cutter shall allow adjustment of blade speed and feed to accommodate different pipe materials and thicknesses within the validated test envelope., FunctionalRequirement
+RMS-12, 60, The prototype shall only be used under conditions and with pipe geometries that have been qualified through CERN’s development and testing programme., Constraint
+RMS-12, 61, Integration of the cutter with power and control interfaces shall preserve all safety interlocks defined for prototype operation., Constraint
+
+Turn the csv into an excel file

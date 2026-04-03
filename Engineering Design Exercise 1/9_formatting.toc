@@ -1,0 +1,16 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Background information}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Selected activities' introduction}{1}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Lifting of CFETR breeding blanket}{2}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Cutting off the pipes in CFETR equatorial port}{3}{subsubsection.1.2.2}%
+\contentsline {section}{\numberline {2}Task 1}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Roadmap}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Implementation plan}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Engineering bill of materials}{5}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Task 2}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Datasheet}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}System requirement document (SRD)}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Context definition document (CDD)}{6}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Conclusions}{6}{section.4}%
+\contentsline {section}{References}{7}{section*.11}%
