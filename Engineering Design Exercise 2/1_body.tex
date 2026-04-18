@@ -4,179 +4,183 @@
 
 \section{Introduction}    
 
-The group work for this exercise has been really helpful.The exercise has also helped us to understand the importance of teamwork and communication in project management. We have learned how to work together effectively, delegate tasks, and communicate clearly.
-
-\subsection{Background information}
-
-The Chinese Fusion Engineering Test Reactor (CFETR) as shown in \cref{fig:CFETR} is a proposed tokamak designed to bridge the technical gap between ITER and a commercial demonstration power plant (DEMO). Planned for two-stage operation, the facility will initially target a fusion power output of 200 MW \parencite{CFETRCONFIG2022}. The second phase involves upgrading the machine to exceed 1 GW of fusion power. This stage aims to perform tokamak DEMO validation, to achieve a duty factor of 0.3-0.5 and to ensure tritium self-sufficiency with a Tritium Breeding Ratio (TBR) >1 \parencite{CFETRCONFIG2019}.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.5\textwidth]{files/CFETR_tokamak.jpg}
-\caption{Configuration of the CFETR tokamak machine \parencite{CFETRCONFIG2022}.}
-\label{fig:CFETR}
-\end{figure}
-
-\subsection{Selected activities' introduction}
-
-\vskip 10pt
-
-\begin{center}
-\includegraphics[width=15.24cm]{files/Activities.jpg}
-\end{center}
+\begin{tabular}{|p{0.2\textwidth}|p{0.4\textwidth}|p{0.4\textwidth}|}
+\hline
+& Contribution & Number of components \\
+\hline
+Student 1 & Task 1 - Steering system & 9 (not accounting the mirrored entities) \\
+\hline
+\end{tabular}
 
 \newpage
 
-\subsubsection{Lifting of CFETR breeding blanket}
+\section{Tasks}
 
-Three candidate tritium breeding blanket (TBB) concepts are proposed for CFETR; the solid blanket, i.e. helium cooled ceramic breeder (HCCB) blanket, water cooled ceramic breeder (WCCB) blanket, and the liquid blanket as supercritical CO\textsubscript{2} cooled lithium-lead (COOL) blanket \parencite{TBBCONFIG}.
+\subsection{Student 1 - Task 1 - Steering system}
 
-For this report we will be focussing on the HCCB TBB as shown in \cref{fig:combined_blanket}.
-
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
-    \begin{subfigure}{0.48\textwidth}  % Using slightly less than 0.5 to allow for margins
-        \centering
-        \includegraphics[width=\textwidth]{files/TBBCONFIG.jpg}
-        \caption{Layout configuration of CFETR TBB.}
-        \label{fig:HCCB}
-    \end{subfigure}
-    \hfill % This pushes the two images to the far left and far right
-    \begin{subfigure}{0.48\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{files/HCCBTBBmodules.jpg}
-        \caption{Blanket modules design of HCCB TBB.}
-        \label{fig:BB_lift}
-    \end{subfigure}
-    \vskip 10pt
-    \caption{Overview of the HCCB TBB breeding blanket configuration and blanket modules design \parencite{HCCBTBB}.}
-    \label{fig:combined_blanket}
+\includegraphics[width=0.6\textwidth]{files/power-rack-and-pinion.jpeg}
+\caption{Power rack and pinion steering system. \parencite{liu_2022_steeringly}.}
+\label{fig:power_rack_and_pinion}
 \end{figure}
 
-\vskip 10pt
-
-The HCCB TBB architecture comprises 16 sectors. The sectors are further divided into two inboard and three outboard segments, each containing various specialized modules numbered 1 to 11 \parencite{TBBCONFIG}. 
-
-\vskip 10pt
-
-\begin{table}[htbp]
-    \caption{Key parameters of the HCCB TBB \parencite{CFETRCONFIG2022}.}
-    \begin{tabular}{|p{0.5\textwidth}|p{0.5\textwidth}|}
-        \hline
-        \textbf{Parameter} & \textbf{Value} \\
-        \hline
-        \text{Structure material} & \text{Reduced Activation Ferritic Martensiti (RAFM)} \\
-        \hline
-        \text{Helium gas (coolant) pressure} & \text{8 MPa} \\
-        \hline
-        \text{Operating inlet/outlet temperature} & \text{300 °C/500 °C} \\
-        \hline
-        \text{Weight of each inboard segment} & \text{~50 tons} \\
-        \hline
-        \text{Weight of each outboard segment} & \text{~80 tons}\\
-        \hline
-        \text{Total weight} & \text{~5000 tons} \\
-        \hline
-    \end{tabular}
-    \label{tab:TBB_parameters}
-\end{table}
-
-\newpage
-
-The remote maintenance activity is carried out using the remote handling (RH) system. This system is composed of lifting, pedestal, and toroidal blanket transfer structures as shown in \cref{fig:RHS}, with independent control systems \parencite{RHTBB}.
-
-\begin{figure}[htbp]
+\begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{files/RHTBB.jpg}
-\caption{Remote handling system for the maintenance of HCBB TBB \parencite{RHTBB}.}
-\label{fig:RHS}
+\includegraphics[width=\textwidth]{files/steeringsystemfilled.pdf}
+\caption{3D modelling assembly.}
 \end{figure}
 
-These systems are used to transport blanket segments, disassemble and install blanket supports, and hoist the blanket under the vertical ports during maintenance \parencite{CFETRCONFIG2022}.
+\includepdf[pages={1}, fitpaper=true]{files/steeringsystemdrawing.pdf}
 
-\subsubsection{Cutting off the pipes in CFETR equatorial port}
-
-The equatorial ports function as double-walled extensions of the vacuum vessel as shown in \cref{fig:EQPORT}.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{files/EQPORT.jpg}
-\caption{Configuration of equatorial ports of CFETR \parencite{EQPORTCONFIG}.}
-\label{fig:EQPORT}
-\end{figure}
-
-The vacuum vessel has 6 equatorial ports, 4 of which are used for maintenance and diagnostics, while the remaining 2 are for neutral beam injector (NBI) \parencite{CFETRCONFIG2022}.
-
-\newpage
-
-\begin{table}[htbp]
-    \caption{Key parameters of the equatorial port \parencite{EQPORTCONFIG}.}
-    \begin{tabular}{|p{0.5\textwidth}|p{0.5\textwidth}|}
-        \hline
-        \textbf{Parameter} & \textbf{Value} \\
-        \hline
-        \text{Length} & \text{4180 mm} \\
-        \hline
-        \text{Width} & \text{3620 mm} \\
-        \hline
-        \text{Height} & \text{2860 mm} \\
-        \hline
-        \text{Weight of each port} & \text{~90 tons}\\
-        \hline
-    \end{tabular}
-    \label{tab:EQPORT_parameters}
-\end{table}
-
-The remote handling (RH) system used to maintain equatorial ports of the vacuum vessel include heavy duty manipulators located in horizontal casks. They are used to perform tasks like cutting and welding pipes \parencite{RHTBB}.
-
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}{0.48\textwidth}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{files/MPD.jpg}
-    \caption{Multi-purpose deployer system (MPD) for the maintenance of equatorial port.}
-    \label{fig:MPD}
-\end{subfigure}
-\begin{subfigure}{0.48\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{files/CASKs.jpg}
-    \caption{Horizontal and vertical casks.}
-    \label{fig:casks}
-\end{subfigure}
-\caption{Heavy duty manipulator and casks \parencite{RHTBB}.}
-\label{fig:MPD_casks}
+    % Left Side: Two stacked images
+    \begin{minipage}[v]{0.48\textwidth}
+        \centering
+        \begin{subfigure}{\textwidth} % Added mandatory width
+            \centering
+            \includegraphics[width=0.58\textwidth]{files/sprucegearfilledisometric.pdf}
+            \caption{Isometric}  
+            \label{fig:spruce_gear_isometric} 
+        \end{subfigure}
+        %\vspace{1em} 
+        %\begin{subfigure}{\textwidth} % Added mandatory width
+        %    \centering
+        %    \includegraphics[width=\textwidth]{single-end2.png}
+        %    \caption{Required data for fault detection.}
+        %   \label{fig:fault_data}
+        %\end{subfigure}
+    \end{minipage}
+    \hfill 
+    % Right Side: One tall image
+    \begin{minipage}[v]{0.38\textwidth}
+        \centering
+        \begin{subfigure}{\textwidth} % Added mandatory width
+            \centering
+            \includegraphics[width=\textwidth]{files/sprcegearfilledfront.pdf}
+            % Fixed the R_F underscore issue below
+            \caption{Front}
+            \label{fig:spruce_gear_front}
+        \end{subfigure}
+    \end{minipage}
+    \caption{Component 1 - Spruce gear.}
+    \label{fig:spruce_gear}
 \end{figure}
-\vskip 10pt
-The CFETR is to have it's own dedicated MPD called the CMOR, CFETR multi-purpose overload robot.
+
+
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{files/rackfilledisometric.pdf}
+\caption{Component 2 - Rack.}
+\label{fig:rack}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{files/woodruffkeyfilledisometric.pdf}
+\caption{Component 3 - Woodruff key.}
+\label{fig:woodruff_key}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{files/shaftfilledisometric.pdf}
+\caption{Component 4 - Shaft.}
+\label{fig:shaft}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{files/tierodfilledisometric.pdf}
+\caption{Component 5 - Tie rod.}
+\label{fig:tie_rod}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{files/steeringleverfilledisometric.pdf}
+\caption{Component 6,7 - Steering lever.}
+\label{fig:steering_lever}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\textwidth]{files/nutfilledisomteric.pdf}
+\caption{Component 8 - Nut.}
+\label{fig:nut}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{files/hingefilledisometric.pdf}
+\caption{Component 9 - Hinge.}
+\label{fig:hinge}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{files/boltfilledisometric.pdf}
+\caption{Component 10 - Bolt.}
+\label{fig:bolt}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{files/steeringsystemscaledfilledisometric.pdf}
+\caption{Scaled 3D modelling assembly.}
+\label{fig:steeringsystem_scaled}
+\end{figure}
+
+\includepdf[pages={1}, fitpaper=true]{files/steeringsystemscaleddrawing.pdf}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{files/sprucegearscaledfilledisometric.pdf}
+\caption{Component 1 - Spruce gear.}
+\label{fig:spruce_gear_scaled}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{files/rackscaledfilledisometric.pdf}
+\caption{Component 2 - Rack.}
+\label{fig:rack_scaled}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{files/tierod(pushinhinge)filledisometric.pdf}
+\caption{Component 3,5 - Tie rod.}
+\label{fig:tie_rod_scaled}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{files/steeringleverscaledfilledisometric.pdf}
+\caption{Component 4,6 - Steering lever.}
+\label{fig:steering_lever_scaled}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{files/axlehousingfilledisometric.pdf}
+\caption{Component 7 - Axle housing.}
+\label{fig:axle_housing}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{files/orcaslicer.png}
+\caption{orca slicer preview.}
+\label{fig:orca_slicer}
+\end{figure}
+
+\href{https://lut-my.sharepoint.com/:v:/g/personal/faiz_shaikh_student_lut_fi/IQA5d4lOfAk6TYlqPn2jOwHBAd5d09KGG3TmrK_14KvR-DM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZI0npT}{3D modelling assembly video.}
+
+\href{https://lut-my.sharepoint.com/:v:/g/personal/faiz_shaikh_student_lut_fi/IQA_DZDITMABSo2Jv_8ra2vsATK722Nq2B3-ZlOGzJGSBto?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=eyVm49}{Scaled 3D modelling assembly video.}
 
 \newpage
-\section{Task 1}
-This Task deals with creating a roadmap, the aim is to design one product capable of undertaking either of the remote maintenance activities described in the previous section. An implementation plan that matches the roadmap is also developed along with a bill of materials (EBOM).
-
-\subsection{Roadmap}
-The activity, lifting of CFETR breeding blanket was selected and a roadmap containing tasks from hiring the required personnel to the final delivery of the product is developed and visualized using a gantt chart.
-
-\subsection{Implementation plan}
-The tasks are divided among the team members and a detailed implementation plan is developed. The implementation plan includes the description of the task, the timeline for completion and a RACI matrix.
-
-\subsection{Engineering bill of materials}
-The machines for the remote maintenance of the HCCB TBB and cutting of pipes in the CFETR equatorial ports are listed in the chart below.
-\vskip 10pt
-\includegraphics{files/EBOM.png}
-
-\newpage
-\section{Task 2}
-Task 2 aims to document the literature review in a systematic way, including datasheet, system requirement document (SRD), and context definition document (CDD).
-
-\subsection{Datasheet}
-Workload was evenly distributed across the team, with each individual sourcing specific machines for the EBOM and subsequently completing the required datasheets for those same machines.
-
-\subsection{System requirement document (SRD)}
-While the EBOM was handled individually, the team worked together to build the System Requirements Document (SRD). Instead of splitting it up into separate parts, everyone collaborated on the whole thing. This allowed us to use everyone's expertise to create a more complete and accurate list of requirements.
-
-\subsection{Context definition document (CDD)} 
-The same was the case for the Context Definition Document (CDD). The team worked together to define the context of the project, ensuring that all aspects were considered and that the document was comprehensive.
-
 \section{Conclusions}
+
 
 The task was successfully completed, significantly enhancing our understanding of project planning and management. We gained thorough experience with core concepts such as the literature review, project roadmap, EBOM, and implementation plan. Ultimately, all project objectives were met in full.
