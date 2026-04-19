@@ -1,19 +1,23 @@
 \babel@toc {english}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Power rack and pinion steering system. \blx@tocontentsinit {0}\parencite {liu_2022_steeringly}.}}{2}{figure.caption.4}%
-\contentsline {figure}{\numberline {2}{\ignorespaces 3D modelling assembly.}}{2}{figure.caption.5}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Component 1 - Spruce gear.}}{4}{figure.caption.6}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Component 2 - Rack.}}{4}{figure.caption.7}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Component 3 - Woodruff key.}}{5}{figure.caption.8}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Component 4 - Shaft.}}{5}{figure.caption.9}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Component 5 - Tie rod.}}{6}{figure.caption.10}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Component 6,7 - Steering lever.}}{6}{figure.caption.11}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Component 8 - Nut.}}{7}{figure.caption.12}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Component 9 - Hinge.}}{7}{figure.caption.13}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Component 10 - Bolt.}}{7}{figure.caption.14}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Scaled 3D modelling assembly.}}{8}{figure.caption.15}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Component 1 - Spruce gear.}}{10}{figure.caption.16}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Component 2 - Rack.}}{10}{figure.caption.17}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Component 3,5 - Tie rod.}}{11}{figure.caption.18}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Component 4,6 - Steering lever.}}{11}{figure.caption.19}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Component 7 - Axle housing.}}{12}{figure.caption.20}%
-\contentsline {figure}{\numberline {18}{\ignorespaces orca slicer preview.}}{13}{figure.caption.21}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Power rack and pinion steering system. \blx@tocontentsinit {0}\parencite {liu_2022_steeringly}.}}{2}{figure.caption.5}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Steering system components: 1-steering wheel, 2-steering column, 3-pinion, 4-rack, 5- transverse bar, 6-rod end, 7-tie rod, 8-steering lever, 9-spindle. \blx@tocontentsinit {0}\parencite {sofian2021rack}.}}{2}{figure.caption.6}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Ackermann geometry diagram. \blx@tocontentsinit {0}\parencite {sofian2021rack}.}}{3}{figure.caption.7}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Tie rod diagram. \blx@tocontentsinit {0}\parencite {sofian2021rack}.}}{3}{figure.caption.8}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Turn angle (inner wheel). \blx@tocontentsinit {0}\parencite {sofian2021rack}.}}{4}{figure.caption.9}%
+\contentsline {figure}{\numberline {6}{\ignorespaces 3D modelling assembly.}}{8}{figure.caption.11}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Component 1 - Spruce gear.}}{10}{figure.caption.12}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Component 2 - Rack.}}{10}{figure.caption.13}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Component 3 - Woodruff key.}}{11}{figure.caption.14}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Component 4 - Shaft.}}{11}{figure.caption.15}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Component 5 - Tie rod.}}{12}{figure.caption.16}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Component 6,7 - Steering lever.}}{12}{figure.caption.17}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Component 8 - Nut.}}{13}{figure.caption.18}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Component 9 - Hinge.}}{13}{figure.caption.19}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Component 10 - Bolt.}}{13}{figure.caption.20}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Scaled 3D modelling assembly.}}{14}{figure.caption.21}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Component 1 - Spruce gear.}}{16}{figure.caption.22}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Component 2 - Rack.}}{16}{figure.caption.23}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Component 3,5 - Tie rod.}}{17}{figure.caption.24}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Component 4,6 - Steering lever.}}{17}{figure.caption.25}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Component 7 - Axle housing.}}{18}{figure.caption.26}%
+\contentsline {figure}{\numberline {22}{\ignorespaces orca slicer preview.}}{18}{figure.caption.27}%

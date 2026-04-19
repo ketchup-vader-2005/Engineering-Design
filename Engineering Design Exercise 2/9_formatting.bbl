@@ -19,6 +19,49 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global/global}
+    \entry{agrawal2016design}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b1f4ebc2aaeb715f66136d8f992777d5}{%
+           family={Agrawal},
+           familyi={A\bibinitperiod},
+           given={Prashant\bibnamedelima L},
+           giveni={P\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=69532969fc2ea8e56581b00e266c6cc2}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={Sahil\bibnamedelima Shaileshbhai},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4be265fb08dddc9b00196777d882831}{%
+           family={Parmar},
+           familyi={P\bibinitperiod},
+           given={Shivanshu\bibnamedelima Rajeshbhai},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fc2aee4863fcf7900b16683479c5ecdf}
+      \strng{fullhash}{47ba3158bc82d1f637849438c3090ca8}
+      \strng{fullhashraw}{47ba3158bc82d1f637849438c3090ca8}
+      \strng{bibnamehash}{47ba3158bc82d1f637849438c3090ca8}
+      \strng{authorbibnamehash}{47ba3158bc82d1f637849438c3090ca8}
+      \strng{authornamehash}{fc2aee4863fcf7900b16683479c5ecdf}
+      \strng{authorfullhash}{47ba3158bc82d1f637849438c3090ca8}
+      \strng{authorfullhashraw}{47ba3158bc82d1f637849438c3090ca8}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal for Science and Research Technology (IJSART)}
+      \field{number}{7}
+      \field{title}{Design and simulation of manual rack and pinion steering system}
+      \field{volume}{2}
+      \field{year}{2016}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+    \endentry
     \entry{liu_2022_steeringly}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=fb22d24a91451187247db85b574476c6}{%
@@ -47,6 +90,119 @@
       \field{note}{Accessed: 2024-05-22}
       \field{title}{Rack And Pinion System Vs Power Steering System: What Are The Differences?}
       \field{year}{2022}
+    \endentry
+    \entry{sofian2021rack}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ead66984a19c09220597985f265db1e2}{%
+           family={SOFIAN},
+           familyi={S\bibinitperiod},
+           given={Andrei-Constantin},
+           giveni={A\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=11ce52b4608df620ae81e046ff2cbd6d}{%
+           family={JURCHIȘ},
+           familyi={J\bibinitperiod},
+           given={Bogdan\bibnamedelima Manolin},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d734f21c1134d53a148c915d31f64dc}{%
+           family={POPA},
+           familyi={P\bibinitperiod},
+           given={Mădălin\bibnamedelima Florin},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{181ddd6191c059ebc0d07a0a70560866}
+      \strng{fullhash}{0ecc07e8d8da3e282f78352ce9e19409}
+      \strng{fullhashraw}{0ecc07e8d8da3e282f78352ce9e19409}
+      \strng{bibnamehash}{0ecc07e8d8da3e282f78352ce9e19409}
+      \strng{authorbibnamehash}{0ecc07e8d8da3e282f78352ce9e19409}
+      \strng{authornamehash}{181ddd6191c059ebc0d07a0a70560866}
+      \strng{authorfullhash}{0ecc07e8d8da3e282f78352ce9e19409}
+      \strng{authorfullhashraw}{0ecc07e8d8da3e282f78352ce9e19409}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Annals of “Dunarea de Jos” University of Galati. Fascicle IX, Metallurgy and Materials Science}
+      \field{number}{4}
+      \field{title}{Rack and pinion steering system design for a passenger car}
+      \field{volume}{44}
+      \field{year}{2021}
+      \field{pages}{79\bibrangedash 85}
+      \range{pages}{7}
+    \endentry
+    \entry{basics-mechanical-engineering}{chapter}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fd6455b8e9a4446a6718200d7d6ccba5}{%
+           family={Spektor},
+           familyi={S\bibinitperiod},
+           given={Michael\bibnamedelima B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Industrial Press}%
+      }
+      \strng{namehash}{fd6455b8e9a4446a6718200d7d6ccba5}
+      \strng{fullhash}{fd6455b8e9a4446a6718200d7d6ccba5}
+      \strng{fullhashraw}{fd6455b8e9a4446a6718200d7d6ccba5}
+      \strng{bibnamehash}{fd6455b8e9a4446a6718200d7d6ccba5}
+      \strng{authorbibnamehash}{fd6455b8e9a4446a6718200d7d6ccba5}
+      \strng{authornamehash}{fd6455b8e9a4446a6718200d7d6ccba5}
+      \strng{authorfullhash}{fd6455b8e9a4446a6718200d7d6ccba5}
+      \strng{authorfullhashraw}{fd6455b8e9a4446a6718200d7d6ccba5}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Machine Design Elements and Assemblies}
+      \field{isbn}{978-0-8311-3619-2}
+      \field{title}{1. Basics of Mechanical Engineering Calculations and Design}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://app.knovel.com/hotlink/pdf/id:kt0121STA3/machine-design-elements/basics-mechanical-engineering
+      \endverb
+      \verb{url}
+      \verb https://app.knovel.com/hotlink/pdf/id:kt0121STA3/machine-design-elements/basics-mechanical-engineering
+      \endverb
+    \endentry
+    \entry{ToyotaCorolla2021TechSpec}{manual}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=32609735cbfd46ddd09c7ca8c3313332}{%
+           family={{Toyota (GB) PLC}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Toyota UK Media Pressroom}%
+      }
+      \strng{namehash}{32609735cbfd46ddd09c7ca8c3313332}
+      \strng{fullhash}{32609735cbfd46ddd09c7ca8c3313332}
+      \strng{fullhashraw}{32609735cbfd46ddd09c7ca8c3313332}
+      \strng{bibnamehash}{32609735cbfd46ddd09c7ca8c3313332}
+      \strng{authorbibnamehash}{32609735cbfd46ddd09c7ca8c3313332}
+      \strng{authornamehash}{32609735cbfd46ddd09c7ca8c3313332}
+      \strng{authorfullhash}{32609735cbfd46ddd09c7ca8c3313332}
+      \strng{authorfullhashraw}{32609735cbfd46ddd09c7ca8c3313332}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: April 2, 2026}
+      \field{title}{Toyota Corolla Technical Specifications}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://media.toyota.co.uk/wp-content/uploads/sites/5/pdf/210127M-Corolla-Tech-Spec.pdf
+      \endverb
+      \verb{url}
+      \verb https://media.toyota.co.uk/wp-content/uploads/sites/5/pdf/210127M-Corolla-Tech-Spec.pdf
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

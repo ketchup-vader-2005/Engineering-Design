@@ -4,13 +4,18 @@
 
 \section{Introduction}    
 
+The task was achieved by establishing a theoretical steering model based on the Toyota Corolla E210. Parameters were optimized to minimize Ackermann error. Subsequently, gear and shaft components were designed for structural integrity and adapted for 3D printing through scaling and simplified joint mechanics.
+
+\begin{table}[H]
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{|p{0.2\textwidth}|p{0.4\textwidth}|p{0.4\textwidth}|}
 \hline
 & Contribution & Number of components \\
 \hline
 Student 1 & Task 1 - Steering system & 9 (not accounting the mirrored entities) \\
 \hline
-\end{tabular}
+\end{tabular}}
+\end{table}
 
 \newpage
 
@@ -18,18 +23,242 @@ Student 1 & Task 1 - Steering system & 9 (not accounting the mirrored entities) 
 
 \subsection{Student 1 - Task 1 - Steering system}
 
+The production-scale steering system, showcased by the power rack-and-pinion assembly in \autoref{fig:power_rack_and_pinion}, serves as the primary mechanism for translating driver input into precise directional control. 
+
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\textwidth]{files/power-rack-and-pinion.jpeg}
+\includegraphics[width=0.5\textwidth]{files/power-rack-and-pinion.jpeg}
 \caption{Power rack and pinion steering system. \parencite{liu_2022_steeringly}.}
 \label{fig:power_rack_and_pinion}
 \end{figure}
 
+The design of the specific sub-components was heavily influenced by the assembly proposed in \parencite{sofian2021rack}, as shown in \autoref{fig:steering_system}. Each element performs a critical function within the kinematic chain: the rack and pinion converts rotational input into linear motion; thesteering shaft and woodruff key transmit torque from the driver; and the tie rods and steering levers translate rack displacement into wheel rotation. Finally, the hinge, bolt, and nut assemblies provide the necessary pivot points and structural fastening.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{files/steering_system.png}
+\caption{Steering system components: 1-steering
+wheel, 2-steering column, 3-pinion, 4-rack, 5-
+transverse bar, 6-rod end, 7-tie rod, 8-steering
+lever, 9-spindle. \parencite{sofian2021rack}.}
+\label{fig:steering_system}
+\end{figure}
+
+\subsection{Parameter Calculations}
+
+Using fixed wheelbase ($A = 2650\, \mathrm{mm}$) and track ($E = 1530\, \mathrm{mm}$) dimensions \parencite{ToyotaCorolla2021TechSpec}, a four-bar linkage solver evaluates inner ($\delta_i$) and outer ($\delta_e$) steering angles across various rack displacements. An objective function identifies the Ackermann error by tracking the deviation of wheel vector intersections from the rear axle. Finally, a minimization algorithm iterates through variables $l$, $t$, and $y_c$ to find the configuration ensuring smooth turning under mechanical constraints \parencite{sofian2021rack}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\textwidth]{files/Ackermann.png}
+\caption{Ackermann geometry diagram. \parencite{sofian2021rack}.}
+\label{fig:ackermann_geometry}
+\end{figure}
+
+The initial steering arm angle relative to the longitudinal axis is defined by:
+\begin{equation}
+    l_{y0} = \arctan\left(\frac{E/2}{A}\right), \quad l_{x0} = \frac{\pi}{2} - l_{y0}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{files/tieroddiagram.png}
+\caption{Tie rod diagram. \parencite{sofian2021rack}.}
+\label{fig:tie_rod_diagram}
+\end{figure}
+
+The coordinates for the steering arm pivot point $B$ in neutral position are:
+\begin{equation}
+    x_B = \frac{E}{2} - l \sin(l_{y0}), \quad y_B = l \cos(l_{y0})
+\end{equation}
+
+The constant tie rod length $b$ is then calculated using the rack length $t$ and offset $y_c$:
+\begin{equation}
+    b = \sqrt{\left(\frac{t}{2} - x_B\right)^2 + (y_c - y_B)^2}
+\end{equation}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{files/tireangles.png}
+\caption{Turn angle (inner wheel). \parencite{sofian2021rack}.}
+\label{fig:inner_tire_angle}
+\end{figure}
+
+For a rack displacement $x$, the horizontal distance from the center to the rack end is:
+\begin{equation}
+    d_i = \frac{E}{2} - \frac{t}{2} + x
+\end{equation}
+
+The steering angle is solved using the following intermediate constants:
+\begin{equation}
+    P = 2 d_i l, \quad Q = 2 y_c l, \quad R_{const} = b^2 - d_i^2 - y_c^2 - l^2
+\end{equation}
+
+Applying the half-tangent substitution ($z = \tan(l_{xi}/2)$):
+\begin{equation}
+    a_q = R_{const} - P, \quad b_q = 2Q, \quad c_q = P + R_{const}
+\end{equation}
+\begin{equation}
+    z = \frac{-b_q - \sqrt{b_q^2 - 4 a_q c_q}}{2 a_q}
+\end{equation}
+
+The resulting steering angle $\delta_i$ is:
+\begin{equation}
+    \delta_i = \text{deg}(l_{x0} - 2 \arctan(z))
+\end{equation}
+
+The calculations for the outer angle are identical with a few minor changes. 
+
+The Ackermann Radius $R$ is calculated from the inner ($\delta_i$) and outer ($\delta_e$) angles:
+\begin{equation}
+    R = \frac{E}{2} \left( \frac{\tan(\delta_e) + \tan(\delta_i)}{\tan(\delta_i) - \tan(\delta_e)} \right)
+\end{equation}
+
+\text{The Mean Radius Error ($\epsilon$) to be minimized:}
+\begin{equation}
+    \epsilon = \left| A - (R - E/2) \tan(\delta_i) \right|
+\end{equation}
+
+\begin{table}[h!]
+    \label{table:parameters}
+    \centering
+    \caption{Optimized Steering Geometry Parameters for $d_p > 20 \mathrm{mm}$ and a rack stroke of $95 \mathrm{mm}$.}
+    \begin{tabular}{|l|l|r|}
+        \hline
+        Parameter & Symbol & Value \\
+        \hline
+        Optimal Steering Arm & $l$ & 200.00 mm \\
+        \hline
+        Optimal Rack Length & $t$ & 950.00 mm \\
+        \hline
+        Optimal Rack Offset & $y_c$ & 50.00 mm \\
+        \hline
+    \end{tabular}
+\end{table}
+
+The calculated tie rod length is $b = 274.25 \mathrm{mm}$, which remains constant across all rack displacements. 
+
+Following the Ackermann geometry optimization, the rack and pinion assembly is designed for mechanical feasibility and integrity. The process establishes tooth sizing via the module and derives the circular pitch. Boundaries are defined by the addendum diameter, while minimum teeth, dedendum and base diameters ensure interference-free meshing \parencite{basics-mechanical-engineering}.
+
+% 1. Pitch Diameter and Module
+Module:
+\begin{equation}
+    m = 1.25
+\end{equation}
+
+Pitch:
+\begin{equation}
+    p = m\pi = 3.926996817
+\end{equation}
+
+Addendum Diameter:
+\begin{equation}
+    d_a = m(N+2) = 22.5
+\end{equation}
+
+Dedendum Diameter:
+\begin{equation}
+    d_d = m(N-2.5) = 16.875
+\end{equation}
+
+Base Diameter:
+\begin{equation}
+    d_b = 16.875 + 0.25 \cdot m = 17.1875
+\end{equation}
+
+Minimum Teeth for Interference Constraint:
+\begin{equation}
+    N_{min} > \frac{2}{\sin^2\phi} = 6.942
+\end{equation}
+
+where $\phi$ is the pressure angle.
+
+Structural analysis of the steering shaft ensures safe torque transmission by deriving the required dimensions from operational loads. The process establishes the static load $W$ and king-pin resistance torque $T$ through tire friction and vehicle geometry. This is scaled to determine the maximum torsional load $T_{max}$, which, when evaluated against the endurance limits of EN24 steel via the torsional stress equation, defines the minimum safe shaft diameter.
+
+The front axle load:
+\begin{equation}
+    W = 977.5 \times 9.81 = 9589.275 \, \mathrm{N}
+\end{equation}
+
+The torque at the king-pin is calculated based on the load and track geometry \parencite{agrawal2016design}.
+\begin{equation}
+    T = W \mu \sqrt{\frac{B^2}{8} + E^2}
+\end{equation}
+
+where $\mu$ is the coefficient of friction between the tire and road, taken as 0.7 for dry asphalt, $B$ is the wheel size (16"), and $E$ is the wheel track.
+
+The peak operating torque is derived using the steering system gear ratio (pinion and rack).
+\begin{equation}
+    T_{\max} = T \times gear\ ratio = 73765.96\, \mathrm{Nmm}
+\end{equation}
+
+The analysis continues with the ultimate tensile strength and the fundamental endurance limit equation \parencite{basics-mechanical-engineering}.
+\begin{equation}
+    S_{ut} = 850 \, \mathrm{MPa}
+\end{equation}
+
+\begin{equation}
+    S_e' = 0.5 S_{ut}
+\end{equation}
+
+\begin{equation}
+    S_e = k_a k_b k_c S_e'
+\end{equation}
+
+The surface factor $k_a$, size factor $k_b$, and load factor $k_c$ are calculated to modify the ideal limit.
+\begin{equation}
+    k_a = 0.8 - 0.0002029(S_{ut} - 700)
+\end{equation}
+\begin{equation}
+    k_b = 1 - 0.0073(d - 8)
+\end{equation}
+\begin{equation}
+    k_c = 0.577
+\end{equation}
+
+Combining these factors yields the final endurance limit as a function of the shaft diameter.
+\begin{equation}
+    S_e = 199.737625229 - 0.00073d \, \mathrm{MPa}
+\end{equation}
+
+The required diameter is solved using the torsional stress equation relative to the endurance limit \parencite{basics-mechanical-engineering}.
+\begin{equation}
+    d = 1.72 \sqrt[3]{\frac{T_{\max} \cdot n_{\tau}}{S_e}}
+\end{equation}
+
+where $n_{\tau}$ is the safety factor, $3$ in this case.
+
+Theoretical minimum diameter:
+\begin{equation}
+    d_{\min} = 17.801 \, \mathrm{mm}
+\end{equation}
+
+The chosen diameter of $18 \, \mathrm{mm}$ provides a safety margin while ensuring manufacturability and compatibility with standard components.
+
+The final design phase secures the assembly using a woodruff key sized to prevent shear failure.
+
+\begin{equation}
+    S_{sy} = 650 \, \mathrm{N/mm^2}
+\end{equation}
+
+The minimum length required for the key to withstand torsional shear is calculated using the following relation.
+\begin{equation}
+    L\tau_{\min} = \frac{2 T_{\max} n_{\tau}}{d \cdot b \cdot S_{sy}}
+\end{equation}
+
+where $b$ is an arbitrary width of the key, $2 \, \mathrm{mm}$ was selected.
+
+The theoretical woodruff key length $L_o = 7.657$ mm is derived from the shear stress requirements and subsequently rounded to a size of $L_y = 8$ mm.
+
+\subsection{3D Modelling Assemblies}
+
+\vfill
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{files/steeringsystemfilled.pdf}
 \caption{3D modelling assembly.}
 \end{figure}
+\vfill
 
 \includepdf[pages={1}, fitpaper=true]{files/steeringsystemdrawing.pdf}
 
@@ -67,7 +296,6 @@ Student 1 & Task 1 - Steering system & 9 (not accounting the mirrored entities) 
     \caption{Component 1 - Spruce gear.}
     \label{fig:spruce_gear}
 \end{figure}
-
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{files/rackfilledisometric.pdf}
@@ -124,12 +352,16 @@ Student 1 & Task 1 - Steering system & 9 (not accounting the mirrored entities) 
 \label{fig:bolt}
 \end{figure}
 
+Since the steering system designed for a full-scale vehicle could not be directly scaled down for 3D printing, individual components were adjusted to maintain the calculated geometry while ensuring printability. To streamline the design, the complexity was reduced by replacing the original hinge, bolt, and nut systems with simplified, push-in pin joints. Additionally, a dedicated axle housing was designed to integrate and secure the mechanism. The resulting scaled assembly and its components are shown below in \autoref{fig:steeringsystem_scaled}.
+
+\vfill
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{files/steeringsystemscaledfilledisometric.pdf}
 \caption{Scaled 3D modelling assembly.}
 \label{fig:steeringsystem_scaled}
 \end{figure}
+\vfill
 
 \includepdf[pages={1}, fitpaper=true]{files/steeringsystemscaleddrawing.pdf}
 
@@ -163,7 +395,7 @@ Student 1 & Task 1 - Steering system & 9 (not accounting the mirrored entities) 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{files/axlehousingfilledisometric.pdf}
+\includegraphics[width=0.9\textwidth]{files/axlehousingfilledisometric.pdf}
 \caption{Component 7 - Axle housing.}
 \label{fig:axle_housing}
 \end{figure}
@@ -175,12 +407,18 @@ Student 1 & Task 1 - Steering system & 9 (not accounting the mirrored entities) 
 \label{fig:orca_slicer}
 \end{figure}
 
+\subsection{Links}
+
 \href{https://lut-my.sharepoint.com/:v:/g/personal/faiz_shaikh_student_lut_fi/IQA5d4lOfAk6TYlqPn2jOwHBAd5d09KGG3TmrK_14KvR-DM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZI0npT}{3D modelling assembly video.}
 
 \href{https://lut-my.sharepoint.com/:v:/g/personal/faiz_shaikh_student_lut_fi/IQA_DZDITMABSo2Jv_8ra2vsATK722Nq2B3-ZlOGzJGSBto?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=eyVm49}{Scaled 3D modelling assembly video.}
 
-\newpage
+\href{https://github.com/ketchup-vader-2005/Engineering-Design.git}{GitHub repository to all the modelling files.}
+
 \section{Conclusions}
 
+The steering system design and assembly task were completed successfully, providing a comprehensive overview of the engineering design lifecycle. Through this process, core competencies in literature review, kinematic modeling, and implementation planning were significantly enhanced. All primary project objectives, from initial parameter calculation to 3D modeling and manufacturing preparation for 3D printing, were met in full.
 
-The task was successfully completed, significantly enhancing our understanding of project planning and management. We gained thorough experience with core concepts such as the literature review, project roadmap, EBOM, and implementation plan. Ultimately, all project objectives were met in full.
+\vspace{0.5cm}
+
+However, it must be noted that the optimized steering geometry remains a purely mathematical derivation and possesses inherent flaws. To simplify the optimization process, several variables were bounded during calculation, which potentially limits the real-world accuracy of the Ackermann geometry. Because the current model relies strictly on theoretical equations, it does not account for dynamic physical factors such as tire slip angles, lateral forces, or suspension compliance. Future iterations of this design could be significantly improved by utilizing more robust testing methodologies and specialized multi-body dynamics software to validate the kinematic results under simulated driving conditions.

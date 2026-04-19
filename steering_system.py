@@ -5,7 +5,7 @@ from scipy.optimize import minimize
 A = 2650.0      # Wheelbase (mm)
 E = 1530.0      # Wheel track (mm)
 PHI_V_MAX = 540 # Steering wheel rotation (degrees) to one side (1.5 turns)
-X_MAX = 190.0    # Rack stroke (mm) - Defined here so it's accessible everywhere
+X_MAX = 95.0    # Rack stroke (mm) - Defined here so it's accessible everywhere
 
 def solve_kinematics(params, A, E, x_val):
     l, t, yc = params
